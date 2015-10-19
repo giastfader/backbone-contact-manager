@@ -16,7 +16,8 @@ ContactManager.Views.Contact = Backbone.View.extend({
     this.$el.append(html);
     return this;
   },
-
+  
+  //this should be removed since the remove action is taken by the router
   onClickDelete: function(e) {
     e.preventDefault();
     this.model.collection.remove(this.model);
